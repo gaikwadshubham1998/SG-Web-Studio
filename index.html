@@ -13,14 +13,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Animate.css for subtle effects -->
+    <!-- Animate.css -->
     <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
-    <!-- AOS (Animate On Scroll) -->
+    <!-- AOS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Style Sheet -->
-    <link href="style.css" rel="stylesheet">
-
-
+    <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,6 +39,7 @@
                 aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="bi bi-list text-white fs-2"></i></span>
             </button>
+
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
@@ -58,16 +56,13 @@
     </nav>
 
     <!-- Hero -->
-    <header id="home" class="hero">
+    <header id="home" class="hero section">
         <div class="container">
             <div class="row align-items-center g-4">
-                <div class="col-lg-6" data-aos="fade-top">
-                    <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">
-                        Owned by Mr. Shubham Gaikwad
-                    </span>
-                    <h1 class="display-5 fw-bold mb-3">Full‑Stack Web Development, Hosting, and Digital Infrastructure
-                    </h1>
-                    <p class="lead text-muted mb-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <span class="badge badge-soft rounded-pill px-3 py-2 mb-3">Owned by Mr. Shubham Gaikwad</span>
+                    <h1 class="display-5 fw-bold mb-3 gradient-text">We build <span id="typed"></span></h1>
+                    <p class="lead muted mb-4">
                         From domains to databases, from UI/UX to deployment — SG Web Studio delivers fast, secure, and
                         scalable web solutions end‑to‑end.
                     </p>
@@ -75,28 +70,28 @@
                         <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
                         <a href="#work" class="btn btn-outline-light btn-lg">See Our Work</a>
                     </div>
-                    <div class="d-flex gap-4 mt-4 text-muted">
+                    <div class="d-flex gap-4 mt-4 muted">
                         <div><i class="bi bi-shield-lock me-1"></i> SSL & Security</div>
                         <div><i class="bi bi-rocket-takeoff me-1"></i> Performance</div>
                         <div><i class="bi bi-phone me-1"></i> Mobile‑first</div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="card-bg p-4 gradient-border">
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="card-bg p-4 shadow-ring">
                         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
                             class="img-fluid rounded-3" alt="Team working on web development">
                         <div class="row text-center mt-3 g-3">
                             <div class="col-4">
                                 <div class="icon-pill mx-auto mb-2"><i class="bi bi-cloud-arrow-up"></i></div>
-                                <small class="text-muted">Cloud Hosting</small>
+                                <small class="muted">Cloud Hosting</small>
                             </div>
                             <div class="col-4">
                                 <div class="icon-pill mx-auto mb-2"><i class="bi bi-columns-gap"></i></div>
-                                <small class="text-muted">UI/UX</small>
+                                <small class="muted">UI/UX</small>
                             </div>
                             <div class="col-4">
                                 <div class="icon-pill mx-auto mb-2"><i class="bi bi-database"></i></div>
-                                <small class="text-muted">Databases</small>
+                                <small class="muted">Databases</small>
                             </div>
                         </div>
                     </div>
@@ -108,7 +103,7 @@
     <!-- Logos -->
     <section class="section py-5">
         <div class="container">
-            <p class="text-center text-muted mb-4">Trusted by startups and SMEs</p>
+            <p class="text-center muted mb-4">Trusted by startups and SMEs</p>
             <div class="row g-3 justify-content-center text-center">
                 <div class="col-4 col-md-2"><i class="bi bi-bootstrap fs-2 text-primary"></i></div>
                 <div class="col-4 col-md-2"><i class="bi bi-wordpress fs-2 text-info"></i></div>
@@ -119,85 +114,112 @@
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services (Flip Cards) -->
     <section id="services" class="section">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="badge badge-soft rounded-pill px-3 py-2">Our Services</span>
                 <h2 class="mt-3 fw-bold">All web‑related services under one roof</h2>
-                <p class="text-muted">Domains, hosting, databases, UI/UX, websites, APIs, CMS, and maintenance.</p>
+                <p class="muted">Domains, hosting, databases, UI/UX, websites, APIs, CMS, and maintenance.</p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-globe2"></i></div>
-                        <h5>Domain & DNS</h5>
-                        <p class="mb-3">Domain registration, DNS management, SSL, CDN, and email setup with robust
-                            security.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>DNSSEC, SPF/DKIM/DMARC</li>
-                            <li>CDN & WAF configuration</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-cloud-check"></i></div>
-                        <h5>Managed Hosting</h5>
-                        <p class="mb-3">High‑availability cloud hosting with backups, monitoring, and autoscaling.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>Linux, cPanel, Docker, Kubernetes</li>
-                            <li>24/7 monitoring & alerts</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-brush"></i></div>
-                        <h5>Website Design</h5>
-                        <p class="mb-3">Clean, modern UI/UX with responsive layouts, accessibility, and SEO best
-                            practices.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>Figma to code</li>
-                            <li>Performance & accessibility</li>
-                        </ul>
+                <div class="col-md-6 col-lg-4" data-aos="flip-left">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-globe2"></i></div>
+                                <h5>Domain & DNS</h5>
+                                <p class="muted small mt-2">Secure and reliable configurations</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Domain registration, DNS management, SSL, CDN, email setup with robust security.</p>
+                                <small>DNSSEC • SPF/DKIM/DMARC • WAF • CDN</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-terminal"></i></div>
-                        <h5>Full‑Stack Development</h5>
-                        <p class="mb-3">Custom web apps and APIs with Node, PHP/Laravel, or Python/Django.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>REST & GraphQL APIs</li>
-                            <li>Auth, payments, integrations</li>
-                        </ul>
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-cloud-check"></i></div>
+                                <h5>Managed Hosting</h5>
+                                <p class="muted small mt-2">High availability & autoscaling</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Cloud hosting with backups, monitoring, container orchestration and SLAs.</p>
+                                <small>Linux • Docker • Kubernetes • 24/7 alerts</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-database-check"></i></div>
-                        <h5>Databases</h5>
-                        <p class="mb-3">Reliable data architecture with MySQL, PostgreSQL, MongoDB, and Redis.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>Backups & migrations</li>
-                            <li>Performance tuning</li>
-                        </ul>
+
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-brush"></i></div>
+                                <h5>Website Design</h5>
+                                <p class="muted small mt-2">Clean, modern, accessible</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Responsive UI, SEO best practices, and high-performance web experiences.</p>
+                                <small>Figma to Code • Lighthouse • A11y • SEO</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-bg p-4 h-100 shadow-ring">
-                        <div class="icon-pill mb-3"><i class="bi bi-tools"></i></div>
-                        <h5>Maintenance & Support</h5>
-                        <p class="mb-3">Security updates, uptime SLAs, enhancements, and monthly performance audits.</p>
-                        <ul class="text-muted small mb-0">
-                            <li>Issue tracking & reporting</li>
-                            <li>Content updates</li>
-                        </ul>
+
+                <div class="col-md-6 col-lg-4" data-aos="flip-left">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-terminal"></i></div>
+                                <h5>Full‑Stack Development</h5>
+                                <p class="muted small mt-2">Custom apps & APIs</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Feature-rich apps and APIs using Node, Laravel, or Django with secure auth.</p>
+                                <small>REST/GraphQL • Payments • Integrations</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-database-check"></i></div>
+                                <h5>Databases</h5>
+                                <p class="muted small mt-2">Reliable data architecture</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>MySQL, PostgreSQL, MongoDB, Redis — backups, migrations, and tuning.</p>
+                                <small>HA • Replication • Indexing • Caching</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-front">
+                                <div class="icon-pill mb-3"><i class="bi bi-tools"></i></div>
+                                <h5>Maintenance & Support</h5>
+                                <p class="muted small mt-2">Security and SLAs</p>
+                            </div>
+                            <div class="flip-back">
+                                <p>Monthly plans for updates, security hardening, content and performance audits.</p>
+                                <small>Issue tracking • Reports • Uptime</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -214,28 +236,28 @@
                     <div class="card-bg p-4 h-100 text-center">
                         <div class="icon-pill mx-auto mb-3"><i class="bi bi-clipboard-check"></i></div>
                         <h6>1. Discover</h6>
-                        <p class="text-muted">Goals, scope, and success metrics.</p>
+                        <p class="muted">Goals, scope, and success metrics.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card-bg p-4 h-100 text-center">
                         <div class="icon-pill mx-auto mb-3"><i class="bi bi-columns"></i></div>
                         <h6>2. Design</h6>
-                        <p class="text-muted">Wireframes, UI system, content plan.</p>
+                        <p class="muted">Wireframes, UI system, content plan.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card-bg p-4 h-100 text-center">
                         <div class="icon-pill mx-auto mb-3"><i class="bi bi-code-slash"></i></div>
                         <h6>3. Build</h6>
-                        <p class="text-muted">Clean code, version control, QA.</p>
+                        <p class="muted">Clean code, version control, QA.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
                     <div class="card-bg p-4 h-100 text-center">
                         <div class="icon-pill mx-auto mb-3"><i class="bi bi-send-check"></i></div>
                         <h6>4. Launch & Support</h6>
-                        <p class="text-muted">Deployment, monitoring, updates.</p>
+                        <p class="muted">Deployment, monitoring, updates.</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +282,7 @@
                             class="w-100" alt="SaaS Dashboard">
                     </div>
                     <h6 class="mt-2">SaaS Dashboard</h6>
-                    <p class="text-muted small">Next.js, Node, PostgreSQL</p>
+                    <p class="muted small">Next.js, Node, PostgreSQL</p>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="item">
@@ -268,7 +290,7 @@
                             class="w-100" alt="E‑commerce">
                     </div>
                     <h6 class="mt-2">E‑commerce</h6>
-                    <p class="text-muted small">Laravel, MySQL, Razorpay</p>
+                    <p class="muted small">Laravel, MySQL, Razorpay</p>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="item">
@@ -276,7 +298,7 @@
                             class="w-100" alt="Corporate Website">
                     </div>
                     <h6 class="mt-2">Corporate Website</h6>
-                    <p class="text-muted small">WordPress, Elementor</p>
+                    <p class="muted small">WordPress, Elementor</p>
                 </div>
             </div>
         </div>
@@ -292,11 +314,11 @@
 
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card-bg p-4 h-100 price-card">
+                    <div class="p-4 h-100 price-card">
                         <h5>Starter Website</h5>
-                        <p class="text-muted small">Perfect for portfolios and small businesses.</p>
+                        <p class="muted small">Perfect for portfolios and small businesses.</p>
                         <h3 class="fw-bold">₹14,999</h3>
-                        <ul class="list-unstyled mt-3 text-muted">
+                        <ul class="list-unstyled mt-3 muted">
                             <li><i class="bi bi-check2 text-success me-1"></i> 5 pages responsive</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Contact form & SEO basic</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> 1 month support</li>
@@ -306,12 +328,12 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-bg p-4 h-100 price-card popular">
+                    <div class="p-4 h-100 price-card popular">
                         <div class="ribbon">Popular</div>
                         <h5>Business Pro</h5>
-                        <p class="text-muted small">For growing brands needing CMS & integrations.</p>
+                        <p class="muted small">For growing brands needing CMS & integrations.</p>
                         <h3 class="fw-bold">₹39,999</h3>
-                        <ul class="list-unstyled mt-3 text-muted">
+                        <ul class="list-unstyled mt-3 muted">
                             <li><i class="bi bi-check2 text-success me-1"></i> 12 pages + blog (CMS)</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Payment, email, analytics</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> 3 months support</li>
@@ -321,11 +343,11 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-bg p-4 h-100 price-card">
+                    <div class="p-4 h-100 price-card">
                         <h5>E‑commerce</h5>
-                        <p class="text-muted small">End‑to‑end storefront and inventory.</p>
+                        <p class="muted small">End‑to‑end storefront and inventory.</p>
                         <h3 class="fw-bold">₹69,999</h3>
-                        <ul class="list-unstyled mt-3 text-muted">
+                        <ul class="list-unstyled mt-3 muted">
                             <li><i class="bi bi-check2 text-success me-1"></i> Catalog & cart</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> Razorpay/Stripe integration</li>
                             <li><i class="bi bi-check2 text-success me-1"></i> 6 months support</li>
@@ -345,41 +367,105 @@
                 <h2 class="mt-3 fw-bold">Reliable, responsive, results‑driven</h2>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-6" data-aos="fade-top">
-                    <div class="card-bg p-4 h-100">
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="https://i.pravatar.cc/80?img=14" class="rounded-circle" width="56" height="56"
-                                alt="Client">
-                            <div>
-                                <strong>Akhil S.</strong>
-                                <div class="text-muted small">Retail Founder</div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="testimonial h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://i.pravatar.cc/80?img=14" class="rounded-circle" width="56"
+                                            height="56" alt="Client">
+                                        <div>
+                                            <strong>Akhil S.</strong>
+                                            <div class="muted small">Retail Founder</div>
+                                        </div>
+                                        <span class="ms-auto text-warning">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 mb-0">They handled our domain, hosting, and storefront seamlessly.
+                                        Uptime and speed improved drastically.</p>
+                                </div>
                             </div>
-                            <span class="ms-auto text-warning"><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
-                        </div>
-                        <p class="mt-3 mb-0">They handled our domain, hosting, and storefront seamlessly. Uptime and
-                            speed improved drastically.</p>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-top">
-                    <div class="card-bg p-4 h-100">
-                        <div class="d-flex align-items-center gap-3">
-                            <img src="https://i.pravatar.cc/80?img=22" class="rounded-circle" width="56" height="56"
-                                alt="Client">
-                            <div>
-                                <strong>Ritika P.</strong>
-                                <div class="text-muted small">Marketing Lead</div>
+                            <div class="col-md-6">
+                                <div class="testimonial h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://i.pravatar.cc/80?img=22" class="rounded-circle" width="56"
+                                            height="56" alt="Client">
+                                        <div>
+                                            <strong>Ritika P.</strong>
+                                            <div class="muted small">Marketing Lead</div>
+                                        </div>
+                                        <span class="ms-auto text-warning">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 mb-0">Design quality and communication were on point. Our leads
+                                        increased after launch.</p>
+                                </div>
                             </div>
-                            <span class="ms-auto text-warning"><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                         </div>
-                        <p class="mt-3 mb-0">Design quality and communication were on point. Our leads increased after
-                            launch.</p>
                     </div>
+
+                    <!-- Slide 2 (duplicate style, can add more clients) -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="testimonial h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://i.pravatar.cc/80?img=34" class="rounded-circle" width="56"
+                                            height="56" alt="Client">
+                                        <div>
+                                            <strong>Meera T.</strong>
+                                            <div class="muted small">Founder, D2C</div>
+                                        </div>
+                                        <span class="ms-auto text-warning">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 mb-0">Their performance tuning cut load times in half. Solid partner
+                                        for growth.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="testimonial h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://i.pravatar.cc/80?img=5" class="rounded-circle" width="56"
+                                            height="56" alt="Client">
+                                        <div>
+                                            <strong>Sameer V.</strong>
+                                            <div class="muted small">CTO, SaaS</div>
+                                        </div>
+                                        <span class="ms-auto text-warning">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 mb-0">Clean codebase, zero‑downtime deploys, and great documentation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
     </section>
@@ -391,14 +477,16 @@
                 <div class="col-lg-5">
                     <span class="badge badge-soft rounded-pill px-3 py-2">FAQ</span>
                     <h2 class="mt-3 fw-bold">Answers to common questions</h2>
-                    <p class="text-muted">If there’s anything more, we’re a message away.</p>
+                    <p class="muted">If there’s anything more, we’re a message away.</p>
                 </div>
                 <div class="col-lg-7">
                     <div class="accordion" id="faq">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="q1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#a1">Do you provide hosting and domain?</button>
+                                    data-bs-target="#a1">
+                                    Do you provide hosting and domain?
+                                </button>
                             </h2>
                             <div id="a1" class="accordion-collapse collapse" data-bs-parent="#faq">
                                 <div class="accordion-body">Yes. We handle domain registration, DNS, SSL, and managed
@@ -408,7 +496,9 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="q2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#a2">What stacks do you support?</button>
+                                    data-bs-target="#a2">
+                                    What stacks do you support?
+                                </button>
                             </h2>
                             <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faq">
                                 <div class="accordion-body">We work with HTML/CSS/JS, Bootstrap, React/Next,
@@ -418,7 +508,9 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="q3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#a3">Can you migrate my existing site?</button>
+                                    data-bs-target="#a3">
+                                    Can you migrate my existing site?
+                                </button>
                             </h2>
                             <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faq">
                                 <div class="accordion-body">We can migrate your site, database, email, and DNS with
@@ -428,7 +520,9 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="q4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#a4">Do you offer maintenance?</button>
+                                    data-bs-target="#a4">
+                                    Do you offer maintenance?
+                                </button>
                             </h2>
                             <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faq">
                                 <div class="accordion-body">Yes, monthly maintenance plans include updates, security,
@@ -445,17 +539,17 @@
     <section id="contact" class="section">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-top">
+                <div class="col-lg-6" data-aos="fade-up">
                     <span class="badge badge-soft rounded-pill px-3 py-2">Contact</span>
                     <h2 class="mt-3 fw-bold">Let’s build something great</h2>
-                    <p class="text-muted">Tell us about the project to get an estimate within 24 hours.</p>
+                    <p class="muted">Tell us about the project to get an estimate within 24 hours.</p>
 
                     <div class="card-bg p-4 mb-4">
                         <div class="d-flex align-items-center gap-3">
                             <span class="icon-pill"><i class="bi bi-person-badge"></i></span>
                             <div>
                                 <strong>SG Web Studio — Mr. Shubham Gaikwad</strong>
-                                <div class="text-muted small">Pimpri Chinchwad, Maharashtra, India</div>
+                                <div class="muted small">Pimpri Chinchwad, Maharashtra, India</div>
                             </div>
                         </div>
                         <div class="d-flex gap-3 mt-3 flex-wrap">
@@ -475,25 +569,25 @@
                         <div class="row g-3">
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-clock-history text-primary"></i><span class="small text-muted">Fast
+                                    <i class="bi bi-clock-history text-primary"></i><span class="muted small">Fast
                                         turnaround</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-speedometer2 text-primary"></i><span
-                                        class="small text-muted">Optimized performance</span>
+                                    <i class="bi bi-speedometer2 text-primary"></i><span class="muted small">Optimized
+                                        performance</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-shield-lock text-primary"></i><span
-                                        class="small text-muted">Security first</span>
+                                    <i class="bi bi-shield-lock text-primary"></i><span class="muted small">Security
+                                        first</span>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-people text-primary"></i><span class="small text-muted">Long‑term
+                                    <i class="bi bi-people text-primary"></i><span class="muted small">Long‑term
                                         support</span>
                                 </div>
                             </div>
@@ -560,8 +654,8 @@
                         <span class="icon-pill"><i class="bi bi-braces"></i></span>
                         <strong>SG Web Studio</strong>
                     </div>
-                    <p class="text-muted mb-2">Complete web solutions by Mr. Shubham Gaikwad — domains, hosting,
-                        databases, design, and development.</p>
+                    <p class="muted mb-2">Complete web solutions by Mr. Shubham Gaikwad — domains, hosting, databases,
+                        design, and development.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-muted fs-5"><i class="bi bi-github"></i></a>
                         <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
@@ -570,7 +664,7 @@
                 </div>
                 <div class="col-md-6 col-lg-2">
                     <h6>Company</h6>
-                    <ul class="list-unstyled text-muted">
+                    <ul class="list-unstyled muted">
                         <li><a href="#services" class="text-reset">Services</a></li>
                         <li><a href="#work" class="text-reset">Work</a></li>
                         <li><a href="#pricing" class="text-reset">Pricing</a></li>
@@ -579,16 +673,10 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <h6>Contact</h6>
-                    <ul class="list-unstyled text-muted">
+                    <ul class="list-unstyled muted">
                         <li><i class="bi bi-geo-alt me-1"></i> Pimpri Chinchwad, Maharashtra</li>
-                        <li><i class="bi bi-envelope me-1">
-                                <email>
-                            </i> hello@sgwebstudio.in</li>
-                        </email>
-                        <li><i class="bi bi-telephone me-1">
-                                <teli>
-                            </i> +91 8983434112</li>
-                        </teli>
+                        <li><i class="bi bi-envelope me-1"></i> hello@sgwebstudio.in</li>
+                        <li><i class="bi bi-telephone me-1"></i> +91 8983434112</li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -599,7 +687,7 @@
                     </form>
                 </div>
             </div>
-            <div class="text-center text-muted small mt-4">© <span id="year"></span> SG Web Studio. All rights reserved.
+            <div class="text-center muted small mt-4">© <span id="year"></span> SG Web Studio. All rights reserved.
             </div>
         </div>
     </footer>
@@ -609,10 +697,10 @@
         style="right:20px; bottom:20px; width:48px; height:48px; display:none">
         <i class="bi bi-chevron-up"></i>
     </button>
-
-    <!-- JS: Bootstrap + AOS + custom -->
+    <!-- JS: Bootstrap + AOS + Typed + custom -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script>
         // Preloader
@@ -622,10 +710,10 @@
             setTimeout(() => pre.style.display = 'none', 450);
         });
 
-        // Initialize AOS
-        AOS.init({ duration: 700, once: true, offset: 80 });
+        // AOS init
+        AOS.init({ duration: 800, once: true, offset: 80 });
 
-        // Active nav link on click (for SPA feel)
+        // Active nav link on click
         document.querySelectorAll('.navbar .nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelectorAll('.navbar .nav-link').forEach(l => l.classList.remove('active'));
@@ -633,7 +721,7 @@
             });
         });
 
-        // Smooth scroll for internal links
+        // Smooth scroll for internal links with offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const target = document.querySelector(this.getAttribute('href'));
@@ -657,15 +745,22 @@
         const alertBox = document.getElementById('formAlert');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            // Demo only: show success without sending
             alertBox.classList.remove('d-none');
             form.reset();
-            // For real submission: send via fetch to your backend or Formspree
-            // await fetch('/api/contact', {method:'POST', body: new FormData(form)});
+            // To send for real:
+            // await fetch('/api/contact', { method:'POST', body: new FormData(form) });
         });
 
         // Year
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Typed.js
+        new Typed("#typed", {
+            strings: ["Websites 💻", "Web Apps 🚀", "Digital Brands 🌐", "Creative UI ⚡"],
+            typeSpeed: 70,
+            backSpeed: 40,
+            loop: true
+        });
     </script>
 </body>
 
