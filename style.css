@@ -9,11 +9,18 @@
     }
 
     html,
+    :root {
+        /* previous: --bg: hsl(230 15% 10%); */
+        --bg: hsl(230 15% 14%);
+    }
+
     body {
         background: var(--bg);
         color: #e6e9ef;
         scroll-behavior: smooth;
     }
+
+
 
     /* Floating background blobs */
     body::before {
@@ -269,6 +276,41 @@
         background: #0a0d12;
         border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
+
+    /* Remove underline from links in this column */
+    .col-md-6.col-lg-2 .list-unstyled a {
+        text-decoration: none;
+    }
+
+    /* Optional: show underline on hover only */
+    .col-md-6.col-lg-2 .list-unstyled a:hover {
+        text-decoration: underline;
+    }
+
+    /* Add a symbol before each list item */
+    .col-md-6.col-lg-2 .list-unstyled li {
+        position: relative;
+        padding-left: 1.25rem;
+        /* space for the symbol */
+    }
+
+    /* Bullet symbol (choose one content option below) */
+    .col-md-6.col-lg-2 .list-unstyled li::before {
+        content: "›";
+        /* Option A: chevron-like symbol */
+        /* content: "•"; */
+        /* Option B: classic dot */
+        /* content: "→"; */
+        /* Option C: arrow */
+        color: #adb5bd;
+        /* gray; change to #fff for white */
+        position: absolute;
+        left: 0;
+        top: 0.1rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
 
     /* Preloader */
     #preloader {
